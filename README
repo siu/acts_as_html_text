@@ -1,0 +1,17 @@
+= acts_as_html_text
+
+This plugin makes all content columns that end on _html in ActiveRecord objects to be filtered by RedCloth and thus converted to html.
+
+== Resources
+
+Subversion
+
+* http://
+
+Blog
+
+* http://blogdefrikis.homelinux.com
+
+Author
+
+* David Siñuela pastor siu [dot] 4coders [at] gmail [dot] com
