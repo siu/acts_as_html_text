@@ -1,16 +1,31 @@
 = acts_as_html_text
 
-This plugin makes all content columns that end on _html in ActiveRecord objects to be filtered by RedCloth and thus converted to html.
+Rails plugin to automatically filter with Textile pairs of columns of the form [column, column_html]
+
+== Example
+
+On a Post model class with this table definition:
+
+create_table :posts do |t|
+  t.string :title
+  t.string :body
+  t.string :body_html
+end
+
+Model file:
+
+class Post < ActiveRecord::Base
+  acts_as_html_text
+end
+
+Every time a Post instance is saved the column body_html will be updated with the body column contents filtered with Textile.
 
 == Resources
 
-Subversion
+Code
 
-* http://
+git://github.com/siu/acts_as_html_text.git
 
-Blog
-
-* http://blogdefrikis.homelinux.com
 
 Author
 
